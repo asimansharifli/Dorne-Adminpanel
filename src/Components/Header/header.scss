@@ -1,0 +1,77 @@
+@import "../../Assets/Style/resert";
+.header{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;    
+    position: relative;
+    &.scroll{
+        position: fixed;
+    }
+    .logo{
+        margin: 30px;
+        img{
+            width: 100%;
+            object-fit: cover;
+        }
+    }   
+    ul{
+        position: absolute;
+        right: 60px;
+        display: flex;
+        li{
+            a{
+                color: #f4f6f8;
+                font-size: 20px;
+            }
+            transition: 0.5s;
+            margin-right: 35px;
+            &:hover{
+                a{
+
+                    color: #7643ea;
+                }
+            }
+        }
+    } 
+}
+@media (min-width: 320px) and (max-width: 575px){
+    .header{
+        .logo{
+            margin: 0px;
+            margin-left:10px;
+            img{
+                width: 100px;
+                object-fit: cover;
+            }
+        }
+        ul{
+            right: 0px;
+            li{
+                a{
+                    font-size: 10px;
+                }
+                margin-right: 10px;
+            }
+        }
+    }
+}
+@media (min-width: 576px) and (max-width: 767px){
+    .header{
+        .logo{
+            margin: 5px;
+            img{
+                width: 100%;
+            }
+        }
+        ul{
+            right: 5px;
+            li{
+                a{
+                    font-size: 18px;
+                }
+                margin-right: 10px;
+            }
+        }
+    }
+}
